@@ -6,8 +6,6 @@ import pandas as pd
 import urllib
 import datetime
 import os
-import sys
-sys.path.append('C:\\Users\\xj2193\\PycharmProjects\\Salesforce API\\main')
 import settings
 
 
@@ -267,7 +265,6 @@ def main():
         print(str(e))
     try:
         engine_sf = connect_sql_server("aou_sf")
-        connect = engine_sf.connect()
         print('Sql Server connected')
     except Exception as e:
         print(str(e))
